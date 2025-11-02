@@ -147,6 +147,28 @@
 				<dt>Se recomienda reservar los fines de semana y festivos.</dt>
 			</dl>
 		</aside>
+		<br>
 
 	</main>
+
+	<dialog id="reservas">
+			<h3>Solicitud de reserva</h3>
+			<ul>
+				<li>Máx. 10 personas.</li>
+				<li>15 minutos de cortesía.</li>
+				<li>Reservar con 24h de antelación.</li>
+				<li>Avisar si no se va a poder asistir con 2h de antelación.</li>
+				<li>Comentar si se necesita espacio para sillita de bebé o se quiere una trona.</li>
+			</ul>
+			<button id="cerrar">Cerrar</button>
+	</dialog>
+
+	<button id="abrir">Reservar mesa</button>
+
+	<script>
+		const dialog = document.getElementById('reservas');
+		document.getElementById('abrir').onclick = () => dialog.showModal();
+		document.getElementById('cerrar').onclick = () => dialog.close();
+	</script>
 </body>
+</html>
